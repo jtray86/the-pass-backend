@@ -24,7 +24,7 @@ class UsersController < ApplicationController
       # POST /signup
       def signup
         # get the user info from the form (params)
-        user_params = params.permit(:username, :image, :bio, :password)
+        user_params = params.permit(:username, :email, :password)
         # create a new user in the database (User.create)
         user = User.create(user_params)
         if user.valid?
