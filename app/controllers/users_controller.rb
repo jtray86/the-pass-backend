@@ -47,8 +47,20 @@ class UsersController < ApplicationController
       # PATCH /me
       # authenticate
       def update
-        @current_user.update(bio: params[:bio], image: params[:image])
-        # response!
+        @current_user.update(
+          bio: params[:bio], 
+          image: params[:image],   
+          username: params[:username],
+          age: params[:age],
+          name: params[:name],
+          email: params[:email],
+          bio: params[:bio],
+          activity_Level: params[:activity_Level],
+          food_preferances: params[:food_preferances],
+          travel_style: params[:travel_style],
+          favorite_trip: params[:favorite_trip]
+        )
+    
         render json: user
       end
     
