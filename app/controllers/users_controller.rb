@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
 
-    before_action :authenticate, only: [:show]
+    before_action :authenticate, only: [:show, :update]
 
     def login
         # find the user based on their username
@@ -24,7 +24,7 @@ class UsersController < ApplicationController
       # POST /signup
       def signup
         # get the user info from the form (params)
-        user_params = params.permit(:username, :email, :password)
+        user_params = params.permit(:username, :email, :password, :presentation)
         # create a new user in the database (User.create)
         user = User.create(user_params)
         if user.valid?
@@ -47,21 +47,26 @@ class UsersController < ApplicationController
       # PATCH /me
       # authenticate
       def update
-        @current_user.update(
-          bio: params[:bio], 
-          image: params[:image],   
-          username: params[:username],
-          age: params[:age],
-          name: params[:name],
-          email: params[:email],
-          bio: params[:bio],
-          activity_Level: params[:activity_Level],
-          food_preferances: params[:food_preferances],
-          travel_style: params[:travel_style],
-          favorite_trip: params[:favorite_trip]
-        )
+       
+        @current_user.update(user_params)
     
-        render json: user
+        render json: @current_user
+      end
+
+      private
+
+      def user_params 
+        params.require(:user).permit( 
+        :image,   
+        :username,
+        :age,
+        :name,
+        :email,
+        :bio,
+        :activity_level,
+        :food_preferances,
+        :travel_style,
+        :favorite_trip)
       end
     
 
