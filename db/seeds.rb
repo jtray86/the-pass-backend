@@ -23,7 +23,8 @@ Trip.create(
     start_date: "12/7/2021",
     end_date: "17/7/2021",
     description: "Bastille Day!!!",
-    user_id: 1
+    user_id: 1,
+    image: "https://blog.aifsabroad.com/wp-content/uploads/2019/07/aifs-study-abroad-paris-france-bastille-day.jpg"
 )    
 
 
