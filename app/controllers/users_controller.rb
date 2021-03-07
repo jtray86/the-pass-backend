@@ -47,9 +47,8 @@ class UsersController < ApplicationController
       # PATCH /me
       # authenticate
       def update
-       
         @current_user.update(user_params)
-    
+      
         render json: @current_user
       end
 
@@ -66,7 +65,8 @@ class UsersController < ApplicationController
         :activity_level,
         :food_preferances,
         :travel_style,
-        :favorite_trip)
+        :favorite_trip,
+        )
       end
     
 
