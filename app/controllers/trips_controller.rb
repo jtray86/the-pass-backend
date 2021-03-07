@@ -1,5 +1,17 @@
 class TripsController < ApplicationController
 
+    def index   
+        @trips = Trip.all
+
+        render json: @trips
+    end
+
+    def show
+        trip = Trip.find_by(id: params[:id])
+
+        render json: trip
+    end
+
     def create
         trip_params = params.permit(:name, :city, :country, :start_date, :end_date, :description, :image, :user_id)
         # create a new user in the database (User.create)

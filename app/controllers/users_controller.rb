@@ -43,6 +43,18 @@ class UsersController < ApplicationController
         # stub
         render json: @current_user
       end
+
+      def male
+       male_presenting = User.select{ |user| user.presentation == "Male"}
+
+          render json: male_presenting
+      end
+  
+      def female
+        female_presenting = User.select{ |user| user.presentation == "Female"}
+
+        render json: female_presenting
+      end
     
       # PATCH /me
       # authenticate
