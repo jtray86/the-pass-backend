@@ -44,6 +44,12 @@ class UsersController < ApplicationController
         render json: @current_user
       end
 
+      def profile
+        profile = User.find_by(id: params[:id])
+
+        render json: profile
+      end
+
       def male
        male_presenting = User.select{ |user| user.presentation == "Male"}
 

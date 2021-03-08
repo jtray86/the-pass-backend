@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   patch "/me", to: "users#update"
   get '/male', to:"users#male"
   get '/female', to:"users#female"
+  get '/user/:id', to:"users#profile"
 
 # Trips routes
   post "/newtrip", to: "trips#create"
