@@ -25,4 +25,12 @@ class TripsController < ApplicationController
         end
     end
 
+    def delete
+        trip = Trip.find_by(id: params[:id])
+    
+        trip.destroy
+
+        render json: trip
+    end
+
 end

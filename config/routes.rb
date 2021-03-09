@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   post "/newtrip", to: "trips#create"
   get "/trip/:id", to: "trips#show"
   get "/trips", to: "trips#index"
+  delete "/trip/:id", to: "trips#delete"
 
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
