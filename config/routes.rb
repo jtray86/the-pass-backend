@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   get "/trip/:id", to: "trips#show"
   get "/trips", to: "trips#index"
   delete "/trip/:id", to: "trips#delete"
+  get "/match/:current_user/:trip_owner", to: "trips#match"
 
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html

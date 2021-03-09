@@ -33,4 +33,12 @@ class TripsController < ApplicationController
         render json: trip
     end
 
+    def match
+        current_user = params[]
+        trip_owner = params[]
+
+        UserMailer.with(current_user: current_user, trip_owner: trip_owner).match_email
+    end
+
+
 end
