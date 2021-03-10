@@ -12,6 +12,7 @@ Rails.application.routes.draw do
 # Trips routes
   post "/newtrip", to: "trips#create"
   get "/trip/:id", to: "trips#show"
+  patch "trip/:id", to: "trips#add_traveler"
   get "/trips", to: "trips#index"
   delete "/trip/:id", to: "trips#delete"
   get "/match/:current_user/:trip_owner", to: "trips#match"

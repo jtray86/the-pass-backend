@@ -1,9 +1,9 @@
 class TripsController < ApplicationController
 
     def index   
-        @trips = Trip.all
+        trips = Trip.all
 
-        render json: @trips
+        render json: trips
     end
 
     def show
@@ -45,5 +45,13 @@ class TripsController < ApplicationController
         render json: message
     end
 
+    def add_traveler
+        trip = Trip.find_by(id: params[:id])
+        user = params[:addTraveler][0][:id]
+
+        trip.update(traveler_id: user)
+
+        render json: trip
+    end
 
 end
