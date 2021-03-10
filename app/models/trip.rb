@@ -1,6 +1,6 @@
 class Trip < ApplicationRecord
-  belongs_to :user
-  # has_one_attached :picture
-
-  validates_presence_of :name, :city, :country, :start_date, :end_date, :description, :user_id
+  belongs_to :owner, class_name: 'User'
+  belongs_to :traveler, class_name: 'User'
+  
+  validates_presence_of :name, :city, :country, :start_date, :end_date, :description, :owner_id
 end
