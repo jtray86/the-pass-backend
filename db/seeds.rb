@@ -9,7 +9,7 @@ User.destroy_all
         age: 34,
         image:"https://www.telegraph.co.uk/content/dam/fashion/2019/02/07/GettyImages-824296158_trans_NvBQzQNjv4BqdsqbsZL_ZhuUNVNgtppgSVfvYIpE8WooDS_kmLGJk-A.jpg",
         email: "jenniferetracy@gmail.com",
-        bio: "My goal in Life is to see as many works of art that I possibly can. I love to Travel to museums across the world.",
+        bio: "My goal in life is to see as many works of art as I possibly can. I love to travel to museums across the world.",
         activity_level: "Medium",
         food_preferances: "Meat Eater",
         travel_style: "Sightseeing",
@@ -29,7 +29,7 @@ User.destroy_all
         activity_level: "Low",
         food_preferances: "Meat Eater",
         travel_style: "Foodie",
-        favorite_trip: "3 day weekend in Bangkok where we ate nothing but amazing street food",
+        favorite_trip: "3-day weekend in Bangkok where we ate nothing but amazing street food.",
         presentation: "Male"
     )
     User.create(
@@ -44,7 +44,7 @@ User.destroy_all
         activity_level: "Medium",
         food_preferances: "Meat Eater",
         travel_style: "Leisurely",
-        favorite_trip: "The most relaxing vacation I ever had was a week on the beach in Fiji. Massages, good Food and the beautiful sounds of the ocean.",
+        favorite_trip: "The most relaxing vacation I ever had was a week on the beach in Fiji. Massages, good food, and the beautiful sounds of the ocean.",
         presentation: "Male"
     )
     User.create(
@@ -59,7 +59,7 @@ User.destroy_all
         activity_level: "High",
         food_preferances: "Pescatarian",
         travel_style: "Sightseeing",
-        favorite_trip: "A 5 day tour of London where I got to see so many amazing places.",
+        favorite_trip: "A 5-day tour of London where I got to see so many amazing places.",
         presentation: "Male"
         )
     User.create(
@@ -85,11 +85,11 @@ User.destroy_all
         age: 30,
         image:"https://expertphotography.com/wp-content/uploads/2020/08/social-media-profile-photos-3.jpg",
         email: "fake4@gmail.com",
-        bio: "Just a man and his music looking for a good time and someone to travel the world with.",
+        bio: "Just a man and his music looking for a good time and a friend to travel the world with.",
         activity_level: "Medium",
         food_preferances: "Vegan",
         travel_style: "Sightseeing",
-        favorite_trip: "I spent a month in Rome with friends in my 20s. I spent the entire time dragging them around to every tourist spot I could find online. They hated me at the time, but at the end of four weeks, they loved the memories we'd made together.",
+        favorite_trip: "I took a month-long trip to Rome with friends in my 20s. I spent the entire vacation dragging them around to every tourist spot I could find online. They hated me at the time, but at the end of four weeks, they loved the memories we'd made together.",
         presentation: "Male"
         )
 
@@ -123,7 +123,7 @@ User.destroy_all
         activity_level: "Low",
         food_preferances: "Meat Eater",
         travel_style: "Foodie",
-        favorite_trip: "My absolute favorite trip of all time was a food-lovers tour of France that I took when I was right out of culinary school. I spent two weeks tasting local cheeses and visiting vineyards, all while taking cooking courses! It was a dream come true!",
+        favorite_trip: "My absolute favorite trip of all time was a food-lovers tour of France that I went on right out of culinary school. I spent two weeks tasting local cheeses and visiting vineyards, all while taking cooking courses! It was a dream come true!",
         presentation: "Female"
         )
 
