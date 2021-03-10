@@ -193,16 +193,7 @@ User.destroy_all
 
         # ********🛫 Trips ********** #
 
-Trip.create(
-    city: "paris",
-    country: "france",
-    name: "Quelle Suprise! Ooh La La!",
-    start_date: "12/7/2021",
-    end_date: "17/7/2021",
-    description: "Bastille Day!!!",
-    owner_id: 1,
-    image: "https://blog.aifsabroad.com/wp-content/uploads/2019/07/aifs-study-abroad-paris-france-bastille-day.jpg"
-)  
+ 
 Trip.create(
     city: "Sydney",
     country: "Australia",
