@@ -5,7 +5,7 @@ User.destroy_all
 
 # ******* female ********** #
 User.create(
-    id: 1,
+    # id: 1,
     username: "Jtray86",
     password: "123",
     name: "Jen",
@@ -23,7 +23,7 @@ User.create(
 # ******** Male ********* #
 
 User.create(
-    id: 2,
+    # id: 2,
     username: "Chad23",
     password: "123",
     name: "Chad",
@@ -38,8 +38,8 @@ User.create(
     presentation: "Male"
     )
 
-    User.create(
-    id: 3,
+User.create(
+    # id: 3,
     username: "GregStar",
     password: "123",
     name: "Greg",
@@ -55,7 +55,7 @@ User.create(
     )
 
     User.create(
-        id: 4,
+        # id: 4,
         username: "Johntg",
         password: "123",
         name: "John",
@@ -71,7 +71,7 @@ User.create(
         )
 
         User.create(
-        id: 5,
+        # id: 5,
         username: "dannyBoy",
         password: "123",
         name: "Dan",
@@ -87,7 +87,7 @@ User.create(
         )
 
         User.create(
-        id: 6,
+        # id: 6,
         username: "KeenyG",
         password: "123",
         name: "Kenny",
@@ -103,7 +103,7 @@ User.create(
         )
 
         User.create(
-        id: 7,
+        # id: 7,
         username: "james789",
         password: "123",
         name: "James",
@@ -121,7 +121,7 @@ User.create(
         # ******* female ********* #
 
         User.create(
-        id: 8,
+        # id: 8,
         username: "Sara432",
         password: "123",
         name: "Sara",
@@ -137,7 +137,7 @@ User.create(
         )
 
         User.create(
-        id: 9,
+        # id: 9,
         username: "Jessica90",
         password: "123",
         name: "Jess",
@@ -153,7 +153,7 @@ User.create(
         )
 
         User.create(
-        id: 10,
+        # id: 10,
         username: "Ginny12",
         password: "123",
         name: "Ginny",
@@ -169,7 +169,7 @@ User.create(
         )
 
         User.create(
-        id: 11,
+        # id: 11,
         username: "Lisa456",
         password: "123",
         name: "Lisa",
@@ -185,7 +185,7 @@ User.create(
         )
 
         User.create(
-        id: 12,
+        # id: 12,
         username: "Cassandra93",
         password: "123",
         name: "Cassie",

@@ -28,3 +28,8 @@
 
 # Ignore Google Storage API
 /config/secrets/*
+
+/db
+
+# Ignore application configuration
+/config/application.yml

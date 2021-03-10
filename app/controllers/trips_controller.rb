@@ -34,10 +34,15 @@ class TripsController < ApplicationController
     end
 
     def match
-        current_user = params[]
-        trip_owner = params[]
+        # byebug
+        current_user = User.find_by(id: params[:current_user])
+        trip_owner = User.find_by(id: params[:trip_owner])
 
-        UserMailer.with(current_user: current_user, trip_owner: trip_owner).match_email
+        UserMailer.with(current_user: current_user, trip_owner: trip_owner).match_email.deliver_now
+
+        message = "Email Sent"
+
+        render json: message
     end
 
 
